@@ -1,0 +1,6 @@
+test_str = "Give papa a cup of proper coffee in a copper coffee cups"
+test_sub = "coffee"
+print("The original string is : " + test_str)
+print("The original substring : " + test_sub)
+res = test_str.count(test_sub)
+print("The frequency of substring in string is " + str(res))
