@@ -1,0 +1,6 @@
+def add(sum1, sum2):
+    return sum1 + sum2
+sum1 = add(100, 200)
+sum2 = add(8, 9)
+print(sum1)
+print(sum2)
