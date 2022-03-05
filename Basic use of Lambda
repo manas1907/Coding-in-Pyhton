@@ -1,0 +1,8 @@
+# Python program to demonstrate
+# lambda functions
+
+
+x ="Manas Kumar"
+
+# lambda gets pass to print
+(lambda x : print(x))(x)
