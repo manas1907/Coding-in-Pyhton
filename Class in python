@@ -1,0 +1,10 @@
+class employee:
+    def __init__(self,name,id):
+       self.id = id
+       self.name = name
+    def display(self):
+        print("ID: %d \nname: %d" ,(self.id, self.name))
+emp1 = employee("Manas", 101)
+emp2 = employee("Kavita", 102)
+emp1.display()
+emp2.display()
