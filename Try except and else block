@@ -1,0 +1,12 @@
+def divide(a, b):
+    try:
+    
+        result = a // b
+        print("Yeah ! Your answer is :", result)
+    except ZeroDivisionError:
+        print("Sorry ! You are dividing by zero ")
+   
+
+divide(3, 2)
+divide(3, 0)
+divide(4, 2)
