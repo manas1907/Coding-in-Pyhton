@@ -1,0 +1,14 @@
+thisdict = {
+  "jane": 17,
+  "beth": 45,
+  "james": 64,
+  "tom": 19
+}
+print(sorted(thisdict))
+print(thisdict.items())
+sorted_age= sorted(thisdict.items(), key=lambda kv:kv[1])
+print(sorted_age)
+sorted_dictionary = dict(sorted age)
+print(sorted_dictionary)
+print(thisdict)
+
