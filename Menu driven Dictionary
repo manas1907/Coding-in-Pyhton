@@ -1,0 +1,48 @@
+dic=dict()
+x=int(input("Enter number of records: "))
+def rec():
+    name=str(input("\nEnter name: "))
+    age=int(input("Enter age: "))
+    dic[name]=age
+
+def del_rec():
+    print("")
+    print(dic)
+    d=str(input("\nEnter name of person whose record is to be deleted:"))
+    del dic[d]
+    print("")
+    print(dic)
+
+def rec_upd():
+     print("")
+     print(dic)
+     d=str(input("\nEnter name of person whose record is to be updated: "))
+     update={}
+     u=int(input("Enter new age: "))
+     update={d:u}
+     dic.update(update)
+     print("")
+     print(dic) 
+    
+while(x!=0):
+    rec()
+    x=x-1
+
+while(True):
+    print("\n1.Add a record\n2.Delete a record\n3.Display dictionary\n4.Update\n5.Exit\n")
+    a=int(input("\nEnter your choice:"))
+    if (a==1):
+        rec()
+    
+    elif (a==2):
+        del_rec()
+               
+
+    elif (a==3):
+        print("")
+        print(dic)
+
+    elif (a==4):
+        rec_upd()       
+    else:
+        break
