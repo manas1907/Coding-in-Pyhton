@@ -1,0 +1,18 @@
+file1 = open("Manas.txt", "w") 
+file2 = open(r"C:\Users\MANAS\Desktop\Manas.txt", "w+")
+a = ["My name is Manas \n", "A student of UPES \n", "Pursuing B.Tech in Computer Science \n",
+     "Passed 10th from Arunachal pradesh\n","And 12th fron Vishakhapatnam, Andhra Pradesh\n"]
+b = "Hello Everyone\n"
+  
+
+file1.write(b)
+  
+file1.writelines(a)
+  
+
+file1.close()
+  
+
+file1 = open('Manas.txt', 'r')
+print(file1.read())
+file1.close()
