@@ -1,0 +1,29 @@
+f=open('Manas.txt','w')
+f.write("My name is Manas \n A student of UPES \n Pursuing B.Tech from UPES in Computer science\n?")
+f.close()
+
+f=open('Manas.txt','r')
+for i in f:
+    print(i,end="")
+f.close()
+
+f=open("Manas.txt",'r')
+for i in f:
+    if i[0]!='A':
+        print(i,end="")
+f.close()
+
+f=open('Manas.txt','r')19072004
+file=f.read()
+words=file.split()
+print(len(words))
+f.close()
+
+f=open('Manas.txt','r')
+file=f.read()
+words=file.split()
+count=0
+for i in words:
+    if len(i)<4:
+        count+=1
+print(count-1)
