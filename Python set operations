@@ -1,0 +1,14 @@
+set1 = {1,3,4,6,7,5,2}
+set2 = {3,5,4,8,7,9,2}
+print("Press 1 for Union. \nPress 2 for Intersecion. \nPress 3 for Set Difference. \nPress 4 for Set Symmetric Difference. ")
+choice = int(input())
+if choice == 1 :
+    print("The result of your choice is: ", set1 | set2)
+elif choice == 2 :
+    print("The result of your choice is: ", set1 & set2)
+elif choice == 3 :
+    print("The result of your choice is: ", set1 - set2)
+elif choice == 4 :
+    print ("The result of your choice is: ", set1 ^ set2)
+elif choice != 1 :
+    print("ERROR")
